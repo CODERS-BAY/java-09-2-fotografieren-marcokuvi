@@ -7,7 +7,6 @@ public class Main {
         Lens fishEyeLens = new Lens(8,16);
         Lens zoomLens = new Lens(30,70);
 
-
         Camera nikon2200 = new Camera("Nikon2200", 24, 65, true, normalLens);
         Camera sonyAlpha6000 = new Camera("Sony AlPHA 6000", 16, 50, true, telephotoLens);
         Camera kanon1600 = new Camera("Kanon 1600", 14, 33, false, wideAngleLens);

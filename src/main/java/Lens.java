@@ -21,10 +21,10 @@ public class Lens {
 
     @Override
     public String toString() {
-        return "Lens{" +
+        return "Lens(" +
                 "lensId=" + lensId +
                 ", minimumFoucsLength=" + minimumFoucsLength +
                 ", maximumFocusLength=" + maximumFocusLength +
-                '}';
+                ')';
     }
 }

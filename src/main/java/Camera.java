@@ -23,13 +23,13 @@ public class Camera {
 
     @Override
     public String toString() {
-        return "Camera{" +
+        return "Camera(" +
                 "cameraId=" + cameraId +
                 ", brand='" + brand + '\'' +
                 ", megaPixels=" + megaPixels +
                 ", displaySize=" + displaySize +
                 ", colored=" + colored +
                 ", lens=" + lens +
-                '}';
+                ')';
     }
 }
