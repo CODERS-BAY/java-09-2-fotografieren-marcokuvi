@@ -6,12 +6,17 @@ public class TestPhotography {
     @Test
     public void testIfANewCameraIsCreated() {
         Lens lens = new Lens(30, 70);
-        Camera camera = new Camera("nikon2200", 18, 60, true, lens);
-        assertEquals("nikon2200", camera.brand);
-        assertEquals(18, camera.megaPixels);
-        assertEquals(60, camera.displaySize);
-        assertTrue(camera.colored);
-        assertEquals(lens, camera.lens);
+        Camera camera = new Camera();
+        camera.setBrand("nikon2200");
+        camera.setMegaPixels(18);
+        camera.setDisplaySize(60);
+        camera.setColored(true);
+        camera.setLens(lens);
+        assertEquals("nikon2200", camera.getBrand());
+        assertEquals(18, camera.getMegaPixels());
+        assertEquals(60, camera.getDisplaySize());
+        assertTrue(camera.isColored());
+        assertEquals(lens, camera.getLens());
     }
 
     @Test
@@ -30,9 +35,8 @@ public class TestPhotography {
 
     @Test
     public void testIfCounterIsFunctional() {
-        Lens lens = new Lens(30, 70);
-        Camera camera = new Camera("nikon2200", 18, 60, true, lens);
-        assertEquals(1, camera.cameraId);
+        Camera camera = new Camera();
+        assertEquals(1, camera.getCameraId());
     }
 
     @Test
@@ -40,7 +44,7 @@ public class TestPhotography {
         Lens lens = new Lens(30, 70);
         Lens lensNew = new Lens(50, 90);
         Camera camera = new Camera("nikon2200", 18, 60, true, lens);
-        camera.lens = lensNew;
-        assertEquals(lensNew, camera.lens);
+        camera.setLens(lensNew);
+        assertEquals(lensNew, camera.getLens());
     }
 }
