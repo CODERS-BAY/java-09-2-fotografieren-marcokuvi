@@ -1,4 +1,5 @@
 import org.junit.jupiter.api.Test;
+
 import static org.junit.jupiter.api.Assertions.*;
 
 public class TestPhotography {
@@ -47,4 +48,5 @@ public class TestPhotography {
         camera.setLens(lensNew);
         assertEquals(lensNew, camera.getLens());
     }
+
 }

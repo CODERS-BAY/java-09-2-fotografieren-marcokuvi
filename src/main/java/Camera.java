@@ -1,11 +1,11 @@
 public class Camera {
 
-    public int cameraId;
-    public String brand;
-    public int megaPixels;
-    public int displaySize;
-    public boolean colored;
-    public Lens lens;
+    private int cameraId;
+    private String brand;
+    private int megaPixels;
+    private int displaySize;
+    private boolean colored;
+    private Lens lens;
 
     private static int CAMERA_COUNTER = 0;
 
@@ -77,4 +77,5 @@ public class Camera {
                 ", lens=" + lens +
                 ')';
     }
+
 }

@@ -4,7 +4,6 @@ public class Lens {
     public int minimumFoucsLength;
     public int maximumFocusLength;
 
-
     private static int LENS_COUNTER;
 
     public Lens(int minimumFoucsLength, int maximumFocusLength) {
