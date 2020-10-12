@@ -37,7 +37,11 @@ public class TestPhotography {
     @Test
     public void testIfCounterIsFunctional() {
         Camera camera = new Camera();
+        Lens lens = new Lens(30,70);
         assertEquals(1, camera.getCameraId());
+        assertEquals(1, lens.lensId);
+        Camera camera1 = new Camera("brand", 24, 24, true, lens);
+        assertEquals(0, camera1.getCameraId());
     }
 
     @Test
