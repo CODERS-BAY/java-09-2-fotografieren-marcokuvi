@@ -38,6 +38,9 @@ public class TestPhotography {
     public void testIfCounterIsFunctional() {
         Camera camera = new Camera();
         assertEquals(1, camera.getCameraId());
+        Camera camera1 = new Camera();
+        assertEquals(2, camera1.getCameraId());
+
     }
 
     @Test
