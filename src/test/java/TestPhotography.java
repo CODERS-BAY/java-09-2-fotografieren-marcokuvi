@@ -40,6 +40,10 @@ public class TestPhotography {
         assertEquals(1, camera.getCameraId());
         Camera camera1 = new Camera();
         assertEquals(2, camera1.getCameraId());
+        Lens lens = new Lens(30,70);
+        Camera camera2 = new Camera("Nikon", 45, 45, true, lens);
+        assertEquals(1, lens.lensId);
+        assertEquals(3, camera2.getCameraId());
 
     }
 

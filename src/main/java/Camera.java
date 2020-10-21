@@ -20,6 +20,8 @@ public class Camera {
         this.displaySize = displaySize;
         this.colored = colored;
         this.lens = lens;
+        CAMERA_COUNTER++;
+        cameraId = CAMERA_COUNTER;
     }
 
     public int getCameraId() {
